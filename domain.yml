@@ -1,0 +1,95 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - weather 
+  - city 
+  - country
+  - wikipedia 
+  - get_news_without_country
+  - get_news_with_country
+ 
+  
+entities:
+- country
+- wiki
+
+
+slots:
+  wiki:
+    type: text
+    influence_conversation: true
+  country:
+    type: text
+    influence_conversation: true
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hey!  What's up?"
+  - text: "What's good?"
+  - text: "I'm good, how about you?"
+  - text: "Hope you are good?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Stay calm, Lines will  fall in pleasant places for you"
+  - text: "All will be well"
+  - text: "There's light at the end of the tunnel"
+
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Were you encouraged?"
+  - text: "Was that helpful?"
+
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_city:
+  - text: which city you want to check for?
+
+  utter_temp:
+  - text: today temperature is {temp} degree celcius
+
+  utter_wiki:
+  - text: Getting the source from wikipedia...
+
+  utter_country:
+  - text: Which country?
+
+
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye"
+  - text: "Have a nice time ahead"
+  - text: "Have a splendid day"
+
+
+
+  utter_iamabot:
+  - text: "My name is AlphaX, I am an AI powered bot"
+  - text: "My name is Alphax, I was built with underlying mathematical models to simulate the emotional state of humans"
+
+ 
+
+actions:
+- action_get_news
+- action_weather_api
+- action_wikipedia_api
+- utter_out_of_scope
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

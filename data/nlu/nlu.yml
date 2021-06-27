@@ -1,0 +1,232 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hello mate
+    - what's up
+    - whats' good
+    - what's gud 
+    - hope you are good
+    - what's going on
+    - yo 
+    - yo! 
+    - hey, you
+
+
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - bai bai 
+    - have a good day
+    - have a gud day
+    - gud bai
+    - good luck
+    - gud luck
+    - gud night 
+    - good nait 
+    
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - of curse 
+    - off cos 
+    - definitely
+    - that sounds gud 
+    - absolutely
+    - great
+    - approved
+
+    
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not good
+    - not gud 
+    - neva 
+    - not realie
+    - not good enough 
+    - not gud enough
+    - try again
+    - trai a gain
+    - better luck next time
+    - I don't tink so
+    - nope
+    - nop 
+    - nada
+    - not this time
+    - not a good one
+
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - feeling great
+    - delighted 
+    - extremely gud
+    - feeling on top of the world
+    - awesome
+    - so great
+    - elated
+    - fantastic
+    - wondaful
+
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - depressed
+    - a very sad day
+    - feeling unlucky
+    - my day was really bad 
+    - my day was so frustrating 
+    - i feel horrible 
+    - i fill horribl
+    - feeling drowned in sorrow 
+    - so terrible 
+    - so terribl 
+    
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you human?
+    - who am i talking to? 
+    - are you a drone?
+    
+- intent: weather
+  examples: |
+   - what is the weather
+   - i want to know the weather of today
+   - tell me the weather forecast
+   - how is the weather today
+
+- intent: city
+  examples: |
+   - lagos
+   - ekiti 
+   - ibadan
+   - abuja
+
+- intent: wikipedia
+  examples: |
+   - can you tell me about [US Elections](wiki)
+   - what do you know about [Coronavirus](wiki)
+   - search [Exchange rate](wiki)
+   - Tell me the story about [African history](wiki)
+   
+- intent: get_news_without_country
+  examples: |
+   - News update please
+   - latest News
+   - find News
+   - what news can you give me this morning
+
+- intent: get_news_with_country
+  examples: |
+   - what is happening in [Nigeria](country)
+   - give me the latest news in  [America](country)
+   - [Ghana](country) news update
+   - what news do you have to tell me about [India](country)
+
+- intent: country
+  examples: |
+   - Ghana(country)
+   - Nigeria(country)
+   - America(country)
+   - India(country)
+
+
+
+- synonym: Nigeria
+  examples: |
+   - Nigeria
+   - Nigeria
+   - Naija
+   - naija
+   - 9ja
+
+- synonym: America
+  examples: |
+   - America
+   - america
+   - USA
+   - US
+  
+- synonym: India
+  examples: |
+   - India
+   - India
+
+- synonym: Ghana
+  examples: |
+   - Ghana 
+   - ghana
+

@@ -1,0 +1,11 @@
+version : "2.0"
+responses:
+     utter_out_of_scope/non_english:
+     - text: I only understand English, I'm sorry.
+     - text: could this be said in English please
+     - text: I dont understand any other language apart from English, Apologies
+
+     utter_out_of_scope/other:
+     - text: I can't help you with that, I'm sorry.
+     - text: This fits out of my scope, Apologies.
+     - text: I am limited to intents like this, I'm sorry!
