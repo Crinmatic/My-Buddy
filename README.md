@@ -1,5 +1,5 @@
 # "My Buddy"
-"My Buddy" is an  AI powered bot which tends to find solutions, run various tasks and give appropriate replies to humans when being triggered by saying "Hello "My Buddy" and then making it know your intents through speeches. 
+"My Buddy" is an  AI powered bot which tends to find solutions, run various tasks and give appropriate replies to humans when being triggered by saying "Hello My Buddy" and then making it know your intents through speeches. 
 "My Buddy" development started February 2021 and as at today, it has been performing well. "My Buddy" isn't only an AI bot, it is also a rule based bot which knows the right time to work on rules or to apply artificial intelligence 
 
 ## Working principle of "My Buddy"
