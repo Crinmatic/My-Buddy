@@ -1,0 +1,111 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: weather path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: utter_city
+  - intent: city
+  - action: action_weather_api
+
+- story: wikipedia path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wikipedia
+  - action: action_wikipedia_api
+
+- story: news with country
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: get_news_with_country
+  - action: action_get_news
+
+- story: news without country
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: get_news_without_country
+  - action: utter_country
+  - intent: country
+  - action: action_get_news
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: weather
+  - action: utter_city
+  - intent: city
+  - action: action_weather_api
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+
+   
+- story: non english
+  steps:
+  - intent: non_english
+  - action: utter_non_english
+
+- story: other_oos
+  steps:
+  - intent: other_oos
+  - action: utter_other_oos
+
+- story: non english
+  steps:
+  - intent: non_english
+  - action: utter_non_english
+
+  
+
+  
+
+  
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: non_english
+  - action: utter_non_english
+  - intent: other_oos
+  - action: utter_other_oos

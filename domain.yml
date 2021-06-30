@@ -1,26 +1,26 @@
-version: "2.0"
-
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - weather 
-  - city 
-  - country
-  - wikipedia 
-  - get_news_without_country
-  - get_news_with_country
- 
-  
+- greet
+- mood_great
+- other_oos
+- non_english
+- deny
+- goodbye
+- city
+- weather
+- affirm
+- mood_unhappy
+- bot_challenge
+- country
+- wikipedia
+- get_news_without_country
+- get_news_with_country
 entities:
 - country
 - wiki
-
-
 slots:
   wiki:
     type: text
@@ -28,68 +28,54 @@ slots:
   country:
     type: text
     influence_conversation: true
-
-
 responses:
+  utter_non_english:
+  - text: I only understand English, I'm sorry.
+  - text: could this be said in English please
+  - text: I dont understand any other language apart from English, Apologies
+  utter_other_oos:
+  - text: I can't help you with that, I'm sorry.
+  - text: This fits out of my scope, Apologies.
+  - text: I am limited to intents like this, I'm sorry!
   utter_greet:
-  - text: "Hey! How are you?"
-  - text: "Hey!  What's up?"
-  - text: "What's good?"
-  - text: "I'm good, how about you?"
-  - text: "Hope you are good?"
-
+  - text: Hey! How are you?
+  - text: Hey!  What's up?
+  - text: What's good?
+  - text: I'm good, how about you?
+  - text: Hope you are good?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "Stay calm, Lines will  fall in pleasant places for you"
-  - text: "All will be well"
-  - text: "There's light at the end of the tunnel"
-
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  - text: Stay calm, Lines will  fall in pleasant places for you
+  - text: All will be well
+  - text: There's light at the end of the tunnel
   utter_did_that_help:
-  - text: "Did that help you?"
-  - text: "Were you encouraged?"
-  - text: "Was that helpful?"
-
-
+  - text: Did that help you?
+  - text: Were you encouraged?
+  - text: Was that helpful?
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_city:
   - text: which city you want to check for?
-
   utter_temp:
   - text: today temperature is {temp} degree celcius
-
   utter_wiki:
   - text: Getting the source from wikipedia...
-
   utter_country:
   - text: Which country?
-
-
-
   utter_goodbye:
-  - text: "Bye"
-  - text: "Goodbye"
-  - text: "Have a nice time ahead"
-  - text: "Have a splendid day"
-
-
-
+  - text: Bye
+  - text: Goodbye
+  - text: Have a nice time ahead
+  - text: Have a splendid day
   utter_iamabot:
-  - text: "My name is AlphaX, I am an AI powered bot"
-  - text: "My name is Alphax, I was built with underlying mathematical models to simulate the emotional state of humans"
-
- 
-
+  - text: My name is AlphaX, I am an AI powered bot
+  - text: My name is Alphax, I was built with underlying mathematical models to simulate the emotional state of humans
 actions:
 - action_get_news
 - action_weather_api
 - action_wikipedia_api
-- utter_out_of_scope
-
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+- utter_greet
+- utter_happy
+- utter_non_english
+- utter_other_oos
