@@ -276,8 +276,8 @@ nlu:
     - Can you make sandwiches?
     - Can you please send me an uber
     - Do I have to accept?
-    - Do you know [Kevin Pelton](name)
-    - Find nearest [pizzahut](company)
+    - Do you know Kevin Pelton
+    - Find nearest pizzahut
     - Have we met before?
     - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
     - How long does it take to set up a Rasa bot?
