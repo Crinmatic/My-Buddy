@@ -226,6 +226,7 @@ nlu:
     - 卧槽
     - bawo ni
     - ba woni
+    - shey o wa
 - intent: other_oos
   examples: |
     - what is google rcs
