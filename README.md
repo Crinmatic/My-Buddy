@@ -25,4 +25,4 @@ It's development just started and I've been a sole contributor, This has slowed 
 
 ### NOTE
 * The model was built on a small data. So it might not work really efficiently, More data would be added as time goes on. 
-
+* "My Buddy" Communicates in English alone. 
