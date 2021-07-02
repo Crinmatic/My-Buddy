@@ -18,6 +18,8 @@ intents:
 - wikipedia
 - get_news_without_country
 - get_news_with_country
+- chit_chat_ask_howdoing
+- chit_chat_askhowold
 entities:
 - country
 - wiki
@@ -29,6 +31,18 @@ slots:
     type: text
     influence_conversation: true
 responses:
+  utter_chit_chat_ask_howdoing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  - text: A little bit cold, otherwise fine.
+  utter_chit_chat_askhowold:
+  - text: Old enough to be a bot!
+  - text: I am your age mate, That's why I'm your buddy ;)
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
+  - text: My first git commit was many moons ago.
+  - text: Why do you ask? Are my wrinkles showing?
+  - text: I've hit the age where I actively try to forget how old I am.
   utter_non_english:
   - text: I only understand English, I'm sorry.
   - text: could this be said in English please

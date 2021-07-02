@@ -21,3 +21,13 @@ rules:
   steps:
   - intent: non_english
   - action: utter_non_english
+
+- rule: respond ask howold
+  steps:
+  - intent: chit_chat_askhowold
+  - action: utter_chit_chat_askhowold
+
+- rule:
+  steps: 
+  - intent: chit_chat_ask_howdoing
+  - action: utter_chit_chat_ask_howdoing
